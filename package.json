@@ -1,0 +1,40 @@
+{
+  "name": "lim012-fe-md-links",
+  "version": "1.0.0",
+  "description": " library looking for links in a Markdown file to check them and report some statistics.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --verbose --collectCoverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilagrosRn/LIM012-fe-md-links.git"
+  },
+  "keywords": [
+    "libreria",
+    "links",
+    ".md",
+    "Markdown"
+  ],
+  "author": "Milagros Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MilagrosRn/LIM012-fe-md-links/issues"
+  },
+  "homepage": "https://github.com/MilagrosRn/LIM012-fe-md-links#readme",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.9.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "jest": "^25.4.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^25.4.0",
+    "jest": "^25.4.0"
+  }
+}

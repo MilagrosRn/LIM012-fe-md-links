@@ -2,50 +2,54 @@
 
 ## Preámbulo
 
+[Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
+ligero muy popular entre developers. Es usado en muchísimas plataformas que
+manejan texto plano (GitHub, foros, blogs, ...), y es muy común
+encontrar varios archivos en ese formato en cualquier tipo de repositorio
+(empezando por el tradicional `README.md`).
+
+Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
+muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
+la información que se quiere compartir.
+
 Dentro de una comunidad de código abierto, nos han propuesto crear una
 herramienta usando [Node.js](https://nodejs.org/), que lea y analice archivos
 en formato `Markdown`, para verificar los links que contengan y reportar
 algunas estadísticas.
 
-![imagen-files](https://kinsta.com/wp-content/uploads/2018/08/anchor-links-wordpress.png)
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 
-## Objetivo
+## Introducción
+
+[Node.js](https://nodejs.org/es/) es un entorno de ejecución para JavaScript
+construido con el [motor de JavaScript V8 de Chrome](https://developers.google.com/v8/).
+Esto nos va a permitir ejecutar JavaScript en el entorno del sistema operativo,
+ya sea tu máquina o un servidor, lo cual nos abre las puertas para poder
+interactuar con el sistema en sí, archivos, redes, ...
+
+En este proyecto nos alejamos un poco del navegador para construir un programa
+que se ejecute usando Node.js, donde aprenderemos sobre cómo interactuar con el
+sistema archivos, con el entorno (_proceso_, _env_, _stdin/stdout/stderr_), ...
+
+## Objetivos
 
 El objetivo práctico de este proyecto es que aprendas cómo crear tu propia
 **librería** (o biblioteca - _library_) en JavaScript.
 
-## Diagrama de flujo 
+Diseñar tu propia librería es una experiencia fundamental para cualquier
+desarrollador porque que te obliga a pensar en la interfaz (API) de tus
+_módulos_ y cómo será usado por otros developers. Debes tener especial
+consideración en peculiaridades del lenguaje, convenciones y buenas prácticas.
 
-*Javascript APi*
-
-![Api](https://user-images.githubusercontent.com/60928469/79943343-41788180-842e-11ea-98d6-e8350c02f80a.png)
-
-## Boirlerplate
-
-|
-|-node_modules
-|-src
-|---index.js
-|---md-links.js
-|---extra-md-links
-|-test
-|--reurses-for-test
-|----proof.js
-|----readme-ok.md
-|----readme-links-broken.md
-|----readme-hole.md
-|----directory
-|------proof.js
-|------readme-ok.md
-|--test.spec.js
-|-.eslintignore
-|-.eslintsrc
-|-.gitignore
-|-babel.config
-|-LICENSE
-|-package.json
-|-package-lock.json
-|-README.md
+Tópicos: [Node.js](https://nodejs.org/en/),
+[módulos (CommonJS)](https://nodejs.org/docs/latest-v0.10.x/api/modules.html),
+[file system](https://nodejs.org/api/fs.html),
+[path](https://nodejs.org/api/path.html),
+[http.get](https://nodejs.org/api/http.html#http_http_get_options_callback),
+parsing,
+[markdown](https://daringfireball.net/projects/markdown/syntax), CLI,
+[npm-scripts](https://docs.npmjs.com/misc/scripts),
+[semver](https://semver.org/), ...
 
 ## Consideraciones generales
 
@@ -99,6 +103,23 @@ las necesidades del usuario:
 - El ejecutable implementa `--stats`.
 - El ejecutable implementa `--validate` y `--stats` juntos.
 
+
+Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
+repositorio.
+
+Antes de comenzar a codear, es necesario que pensemos en la arquitectura y
+boilerplate del proyecto, por lo que `antes de que empieces tu planificacion
+y a trabajar en la funcionalidad de tu proyecto deberás de haber
+creado tu boilerplate y tus tests`. Esto debería quedar
+detallado en tu repo y haberte asegurado de haber recibido feedback de uno
+de tus coaches. Una vez hayas terminado de definir la arquitectura y los tests
+de tu proyecto estarás lista para iniciar con tu **planificacion** por lo cual
+deberas de hacer uso de una serie de _issues_ y _milestones_ para priorizar
+tus tareas y crear un _project_ para organizar el trabajo y poder hacer
+seguimiento de tu progreso.
+
+Dentro de cada _milestone_ se crearán y asignarán los _issues_ que cada quien
+considere necesarios.
 
 ### JavaScript API
 
@@ -256,6 +277,25 @@ pendientes de tu proyecto anterior.
 - [ ] Linting
 
 ***
+
+## Pistas / Tips
+
+### FAQs
+
+#### ¿Cómo hago para que mi módulo sea _instalable_ desde GitHub?
+
+Para que el módulo sea instalable desde GitHub solo tiene que:
+
+- Estar en un repo público de GitHub
+- Contener un `package.json` válido
+
+Con el comando `npm install githubname/reponame` podemos instalar directamente
+desde GitHub. Ver [docs oficiales de `npm install` acá](https://docs.npmjs.com/cli/install).
+
+Por ejemplo, el [`course-parser`](https://github.com/Laboratoria/course-parser)
+que usamos para la currícula no está publicado en el registro público de NPM,
+así que lo instalamos directamente desde GitHub con el comando `npm install
+Laboratoria/course-parser`.
 
 ### Sugerencias de implementación
 
