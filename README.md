@@ -21,53 +21,7 @@ El objetivo práctico de este proyecto es que aprendas cómo crear tu propia
 ![Api](https://user-images.githubusercontent.com/60928469/79943343-41788180-842e-11ea-98d6-e8350c02f80a.png)
 
 ## Boirlerplate
-
-
-|-node_modules
-
-|-src
-
-|---index.js
-
-|---md-links.js
-
-|---extra-md-links
-
-|-test
-
-|--reurses-for-test
-
-|----proof.js
-
-|----readme-ok.md
-
-|----readme-links-broken.md
-
-|----readme-hole.md
-
-|----directory
-
-|------proof.js
-
-|------readme-ok.md
-
-|--test.spec.js
-
-|-.eslintignore
-
-|-.eslintsrc
-
-|-.gitignore
-
-|-babel.config
-
-|-LICENSE
-
-|-package.json
-
-|-package-lock.json
-
-|-README.md
+![boirlerplate](https://user-images.githubusercontent.com/60928469/79944269-b9e04200-8430-11ea-9c19-210b3bcf27a1.PNG)
 
 ## Consideraciones generales
 
