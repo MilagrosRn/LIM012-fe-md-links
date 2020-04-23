@@ -1,10 +1,12 @@
 {
   "name": "lim012-fe-md-links",
   "version": "1.0.0",
-  "description": " library looking for links in a Markdown file to check them and report some statistics.",
+  "description": "library looking for links in a Markdown file to check them and report some statistics.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --verbose --collectCoverage"
+    "test": "jest --verbose --collectCoverage",
+    "eslint": "eslint --ext .js src/ test/",
+    "start": "serve src/"
   },
   "repository": {
     "type": "git",
@@ -25,11 +27,15 @@
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-modules-commonjs": "^7.9.0",
+    "babel-core": "^6.26.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.8.2",
-    "jest": "^25.4.0"
+    "eslint-scope": "^5.0.0",
+    "jest": "^25.4.0",
+    "opener": "^1.5.1",
+    "serve": "^11.3.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.9.5",

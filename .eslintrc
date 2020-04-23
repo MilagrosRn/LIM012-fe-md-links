@@ -15,6 +15,9 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
+    "globals": {
+      "_": false
+    },
     "rules": {
       "linebreak-style": 0,
       "prefer-destructuring": 0,
