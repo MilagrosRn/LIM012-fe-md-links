@@ -20,9 +20,12 @@ El objetivo práctico de este proyecto es que aprendas cómo crear tu propia
 
 ![Api](https://user-images.githubusercontent.com/60928469/79943343-41788180-842e-11ea-98d6-e8350c02f80a.png)
 
+<<<<<<< HEAD
 *CLI*
 ![CLI (2)](https://user-images.githubusercontent.com/60928469/80159456-a6e48380-8590-11ea-8b8d-9ae8f4edf69f.png)
 
+=======
+>>>>>>> 80a84246d76029d194f06e7bb6f48648a642d247
 ## Boirlerplate
 ![boirlerplate](https://user-images.githubusercontent.com/60928469/79944269-b9e04200-8430-11ea-9c19-210b3bcf27a1.PNG)
 
