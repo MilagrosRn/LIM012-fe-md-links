@@ -16,12 +16,11 @@ El objetivo práctico de este proyecto es que aprendas cómo crear tu propia
 
 ## Diagrama de flujo 
 
-*Javascript APi*
+### Javascript API ✅
+![Api-Page-1](https://user-images.githubusercontent.com/60928469/80163190-fb8cfc00-859a-11ea-8028-992538d1cc0f.png)
 
-![Api](https://user-images.githubusercontent.com/60928469/79943343-41788180-842e-11ea-98d6-e8350c02f80a.png)
-
-*CLI*
-![CLI (2)](https://user-images.githubusercontent.com/60928469/80159456-a6e48380-8590-11ea-8b8d-9ae8f4edf69f.png)
+### Interfaz CLI ✅
+![CLI-Page-1](https://user-images.githubusercontent.com/60928469/80163301-54f52b00-859b-11ea-82a7-326092469cab.png)
 
 ## Boirlerplate
 ![boirlerplate](https://user-images.githubusercontent.com/60928469/79944269-b9e04200-8430-11ea-9c19-210b3bcf27a1.PNG)
