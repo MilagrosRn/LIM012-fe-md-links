@@ -5,7 +5,6 @@
   "main": "bin/md-linksMain.js",
   "scripts": {
     "test": "jest --verbose --collectCoverage",
-    "eslint": "eslint --ext .js src/ test/",
     "start": "serve src/"
   },
   "repository": {
@@ -39,7 +38,6 @@
     "eslint-scope": "^5.0.0",
     "jest": "^25.4.0",
     "node-fetch": "^2.6.0",
-    "opener": "^1.5.1",
     "serve": "^11.3.0",
     "showdown": "^1.9.1"
   },

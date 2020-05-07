@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1588818850235" clover="3.2.0">
-  <project timestamp="1588818850235" name="All files">
+<coverage generated="1588867135117" clover="3.2.0">
+  <project timestamp="1588867135117" name="All files">
     <metrics statements="88" coveredstatements="88" conditionals="12" coveredconditionals="12" methods="27" coveredmethods="27" elements="127" coveredelements="127" complexity="0" loc="88" ncloc="88" packages="2" files="4" classes="4"/>
     <package name="src">
       <metrics statements="80" coveredstatements="80" conditionals="12" coveredconditionals="12" methods="27" coveredmethods="27"/>
-      <file name="cli.js" path="C:\Users\Usuario\Desktop\LIM012-fe-md-links\src\cli.js">
+      <file name="cli.js" path="C:\Users\Usuario\Desktop\recover\LIM012-fe-md-links\src\cli.js">
         <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -16,7 +16,7 @@
         <line num="13" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
       </file>
-      <file name="md-links.js" path="C:\Users\Usuario\Desktop\LIM012-fe-md-links\src\md-links.js">
+      <file name="md-links.js" path="C:\Users\Usuario\Desktop\recover\LIM012-fe-md-links\src\md-links.js">
         <metrics statements="44" coveredstatements="44" conditionals="4" coveredconditionals="4" methods="16" coveredmethods="16"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -63,7 +63,7 @@
         <line num="74" count="4" type="stmt"/>
         <line num="80" count="1" type="stmt"/>
       </file>
-      <file name="path.js" path="C:\Users\Usuario\Desktop\LIM012-fe-md-links\src\path.js">
+      <file name="path.js" path="C:\Users\Usuario\Desktop\recover\LIM012-fe-md-links\src\path.js">
         <metrics statements="27" coveredstatements="27" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
         <line num="9" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
@@ -96,7 +96,7 @@
     </package>
     <package name="test">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="recursosOutputs.js" path="C:\Users\Usuario\Desktop\LIM012-fe-md-links\test\recursosOutputs.js">
+      <file name="recursosOutputs.js" path="C:\Users\Usuario\Desktop\recover\LIM012-fe-md-links\test\recursosOutputs.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
