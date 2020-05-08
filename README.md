@@ -7,14 +7,15 @@
 <p>
 <img src="https://camo.githubusercontent.com/6579a18ac9156a16219421616864de4846593229/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f746573742d2d636f7665726167652d3130302532352d677265656e" data-canonical-src="https://img.shields.io/badge/test--coverage-100%25-green" style="max-width:100%;">
 <p>
-## Índice
+  
+# Índice
 
-* [1. Descripción](#1-Descripción)
-* [2. Instalación](#2-Instalación)
-* [3. Diagramas de flujo](#3-Diagramas-de-flujo)
-* [4. backlog de implementación de la librería](#6-backlog-de-implementación-de-la--librería)
-* [5. Javascript API](#4-Javascript-API)
-* [6. Modo de uso](#5-Modo-de-uso)
+* [1.Descripción](#1-Descripción)
+* [2.Instalación](#2-Instalación)
+* [3.Diagramas de flujo](#3-Diagramas-de-flujo)
+* [4.backlog de implementación de la librería](#6-backlog-de-implementación-de-la--librería)
+* [5.Javascript API](#4-Javascript-API)
+* [6.Modo de uso](#5-Modo-de-uso)
 
 
 ***
