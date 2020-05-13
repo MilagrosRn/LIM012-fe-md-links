@@ -1,5 +1,5 @@
 const path = require('path')
-const functions = require('../src/path.js')
+const functions = require('../lib/path.js')
 //RUTAS 1-4
 
 const pathRelative =  'test/recurses-for-test/readme-ok.md';
@@ -59,17 +59,8 @@ describe('funciones de ruta', () => {
   });
 
   it("dado un arreglo sin rutas markdown deberia reatornar un mensaje de error", () => {
-  expect(functions.filterPathsMd([])).toMatch('no se encontro archivos markdown')  
+  expect(functions.filterPathsMd([])).toEqual([])  
   });
 });
-
-/*describe('existPath (path)' , () => {
-   it("deberia comprobar si la ruta existe", () => {
-     // dada una ruta inexistente   se la paso a la funcion y sale 'no valido'
-   // expect(existPath('./$4646/#_4341')).toThrowError('no valido');
-    const response = existPath ('./$4646/#_4341')
-    expect(fs.existsSync(response)).toBeFalsy();
-   });
-}); */
 
    

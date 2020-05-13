@@ -1,16 +1,15 @@
-const { extractLinks, urlValidate } = require('../src/md-links');
+/* eslint-disable max-len */
+const { extractLinks } = require('../lib/md-links');
 const {
-  convertPathRelative, isDirectory, extractFiles, filterPathsMd,
-} = require('../src/path.js');
+  checkPathType, convertPathRelative, isDirectory, extractFiles, filterPathsMd,
+} = require('../lib/path.js');
+const { urlValidate } = require('../lib/urlValidate');
 
-const mdLinks = (pathi, options) => new Promise((resolve) => {
+const mdLinks = (route, options) => new Promise((resolve) => {
   let arrPaths = [];
-  const rutaAbsoluta = convertPathRelative(pathi);
-  if (isDirectory(rutaAbsoluta)) {
-    arrPaths = arrPaths.concat(extractFiles(rutaAbsoluta));
-  } else {
-    arrPaths = arrPaths.concat([rutaAbsoluta]);
-  }
+  const absolutePath = checkPathType(route) ? (route) : convertPathRelative(route);
+  const checkDirectory = (isDirectory(absolutePath)) ? extractFiles(absolutePath) : ([absolutePath]);
+  arrPaths = arrPaths.concat(checkDirectory);
   if (!options.validate) {
     resolve(extractLinks(filterPathsMd(arrPaths)));
   } else {

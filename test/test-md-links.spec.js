@@ -1,7 +1,5 @@
-const functions = require('../src/md-links');
+const functions = require('../lib/md-links');
 const data = require('./recursosOutputs')
-const path = require('path');
-
 
 describe('describe la funciones previas a obtener la promesa con propiedades', () => {
   it("dada el texto de cada link solo muestra los 50 primeros caracteres ", () => {
@@ -14,35 +12,42 @@ describe('describe la funciones previas a obtener la promesa con propiedades', (
     const links = functions.extractLinks(data.arrPathsMarkdown);
     expect(links).toEqual(data.arrayLinksDeafult);
   });
- });
+});
  
-  describe('mdLinks(path,option) deberia retornar una promesa que resuelva a un arreglo de objetos con href,text y file', () => {
-      it(' cada objeto con href,text y file representa un link para un directorio', done => {
-        functions.mdLinks('test/recurses-for-test/directory', { validate: false})
-         .then(resp =>{
-          expect(resp).toEqual(data.arrayMDFalse1);
-          done();
-        });
-      });
-      it('cada objeto con href,text y file representa un link para un archivo', done => {
-        functions.mdLinks('test/recurses-for-test/directory/readmeExtra.md', { validate: false})
-         .then(resp =>{
-          expect(resp).toEqual(data.arrayMDFalse2);
-         done();
-        });
-      });
-      it('cada objeto con href,text,file,status y statusText representa un link para un directorio', done => {
-        functions.mdLinks('test/recurses-for-test/directory', { validate: true})
-        .then(resp =>{
-         expect(resp).toEqual(data.arrayMDTrue1);
-         done();
-       });
-      });
-      it('cada objeto con href,text,file,status y statusText representa un link para un archivo', done => {
-        functions.mdLinks('test/recurses-for-test/directory/readmeExtra.md', { validate: true})
-         .then(resp =>{
-          expect(resp).toEqual(data.arrayMDTrue2);
-         done();
-        });
-      });
+describe('mdLinks(path,option) deberia retornar una promesa que resuelva a un arreglo de objetos con href,text y file', () => {
+  it('cada objeto con href,text y file representa un link para un directorio con ruta absoluta', done => {
+    functions.mdLinks('C:/Users/Usuario/Desktop/recover/LIM012-fe-md-links/test/recurses-for-test/directory', { validate: false})
+      .then(resp =>{
+      expect(resp).toEqual(data.arrayLinksMdDir);
+      done();
     });
+  });
+  it('cada objeto con href,text y file representa un link para un directorio con ruta relativa', done => {
+    functions.mdLinks('test/recurses-for-test/directory', { validate: false})
+      .then(resp =>{
+      expect(resp).toEqual(data.arrayLinksMdDir);
+      done();
+    });
+  });
+  it('cada objeto con href,text y file representa un link para un archivo con ruta relativa', done => {
+    functions.mdLinks('test/recurses-for-test/directory/readmeExtra.md', { validate: false})
+      .then(resp =>{
+      expect(resp).toEqual(data.arrayLinksMdFile);
+      done();
+    });
+  });
+  it('cada objeto con href,text,file,status y statusText representa un link para un directorio con ruta relativa', done => {
+    functions.mdLinks('test/recurses-for-test/directory', { validate: true})
+      .then(resp =>{
+      expect(resp).toEqual(data.arrayLinksMdDirValidate);
+      done();
+    });
+  });
+  it('cada objeto con href,text,file,status y statusText representa un link para un archivo con ruta relativa', done => {
+    functions.mdLinks('test/recurses-for-test/directory/readmeExtra.md', { validate: true})
+      .then(resp =>{
+      expect(resp).toEqual(data.arrayLinksMdFileValidate);
+      done();
+    });
+  });
+});

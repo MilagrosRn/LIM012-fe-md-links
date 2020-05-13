@@ -1,4 +1,4 @@
-const functions = require('../src/cli.js')
+const functions = require('../lib/cli.js')
 
 const arr = [
   {

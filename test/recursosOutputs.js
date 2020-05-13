@@ -55,6 +55,11 @@ const arrayLinksDeafult=[
     },
     {
       file: './readmeExtra.md',
+      href: 'bjijonvg',
+      text: 'this is an error'
+    },
+    {
+      file: './readmeExtra.md',
       href: 'https://github.com/showdownjs/showdown/issues/114',
       text: 'this issue'
     },
@@ -89,7 +94,7 @@ const arrayLinksDeafult=[
       text: 'git pull'
     }
   ]
-const arrayMDFalse1=[
+const arrayLinksMdDir=[
     {
       file: './readmeExtra.md',
       href: 'https://github.com/GoogleCloudPlatform',
@@ -138,6 +143,11 @@ const arrayMDFalse1=[
       file: './readmeExtra.md',
       href: 'https://www.npmjs.com/browse/depended/showdown',
       text: 'and some others…'
+    },
+    {
+      file: './readmeExtra.md',
+      href: 'bjijonvg',
+      text: 'this is an error'
     },
     {
       file: './readmeExtra.md',
@@ -146,7 +156,7 @@ const arrayMDFalse1=[
     }
   ]
  
-  const arrayMDFalse2=[
+  const arrayLinksMdFile=[
     {
       file: './readmeExtra.md',
       href: 'https://github.com/GoogleCloudPlatform',
@@ -198,11 +208,16 @@ const arrayMDFalse1=[
     },
     {
       file: './readmeExtra.md',
+      href: 'bjijonvg',
+      text: 'this is an error'
+    },
+    {
+      file: './readmeExtra.md',
       href: 'https://github.com/showdownjs/showdown/issues/114',
       text: 'this issue'
     }
   ]
-  const arrayMDTrue1 =[
+  const arrayLinksMdDirValidate =[
     {
       file: './readmeExtra.md',
       href: 'https://github.com/GoogleCloudPlatform',
@@ -262,8 +277,8 @@ const arrayMDFalse1=[
       file: './readmeExtra.md',
       href: 'https://github.cp',
       text: 'error link',
-      status: '',
-      statusText: 'FAIL'
+      status: 400,
+      statusText: 'Bad Request'
     },
     {
       file: './readmeExtra.md',
@@ -271,6 +286,13 @@ const arrayMDFalse1=[
       text: 'and some others…',
       status: 200,
       statusText: 'OK'
+    }, 
+    {
+      file: "./readmeExtra.md",
+      href: "bjijonvg",
+      status: '',
+      statusText: 'FAIL',
+      text: "this is an error",
     },
     {
       file: './readmeExtra.md',
@@ -280,7 +302,7 @@ const arrayMDFalse1=[
       statusText: 'OK'
     }
   ]
-  const arrayMDTrue2 = [
+  const arrayLinksMdFileValidate = [
     {
       file: './readmeExtra.md',
       href: 'https://github.com/GoogleCloudPlatform',
@@ -340,8 +362,8 @@ const arrayMDFalse1=[
       file: './readmeExtra.md',
       href: 'https://github.cp',
       text: 'error link',
-      status: '',
-      statusText: 'FAIL'
+      status: 400,
+      statusText: 'Bad Request'
     },
     {
       file: './readmeExtra.md',
@@ -349,6 +371,13 @@ const arrayMDFalse1=[
       text: 'and some others…',
       status: 200,
       statusText: 'OK'
+    },
+    {
+      file: "./readmeExtra.md",
+      href: "bjijonvg",
+      status: '',
+      statusText: 'FAIL',
+      text: "this is an error",
     },
     {
       file: './readmeExtra.md',
@@ -361,8 +390,8 @@ const arrayMDFalse1=[
 module.exports = {
     arrPathsMarkdown,
     arrayLinksDeafult,
-    arrayMDFalse1,
-    arrayMDFalse2,
-    arrayMDTrue1,
-    arrayMDTrue2,
+    arrayLinksMdDir,
+    arrayLinksMdFile,
+    arrayLinksMdDirValidate,
+    arrayLinksMdFileValidate,
 }

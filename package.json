@@ -5,7 +5,7 @@
   "main": "bin/md-linksMain.js",
   "scripts": {
     "test": "jest --verbose --collectCoverage",
-    "start": "serve src/"
+    "start": "serve lib/"
   },
   "repository": {
     "type": "git",
@@ -27,21 +27,21 @@
   },
   "homepage": "https://github.com/MilagrosRn/LIM012-fe-md-links#readme",
   "dependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
     "chalk": "^4.0.0",
     "cheerio": "^1.0.0-rc.3",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.8.2",
-    "eslint-scope": "^5.0.0",
-    "jest": "^25.4.0",
     "node-fetch": "^2.6.0",
     "serve": "^11.3.0",
     "showdown": "^1.9.1"
   },
   "devDependencies": {
-    "jest": "^25.4.0"
+    "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.10.0",
+    "eslint-scope": "^5.0.0",
+    "fetch-mock": "^9.5.0",
+    "jest": "^25.5.4"
   }
 }
