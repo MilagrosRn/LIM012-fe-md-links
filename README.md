@@ -1,6 +1,6 @@
 
 <p>
-  <img align="right" width="200" margin-top="20%" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWr1wgj5MZn2a7Mub8wAU_5a47dFMPeJy1Rup2bs5OxuhOyFBt&usqp=CAU">
+  <img align="right" width="180" margin-top="20%" height="180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWr1wgj5MZn2a7Mub8wAU_5a47dFMPeJy1Rup2bs5OxuhOyFBt&usqp=CAU">
 </p>
 
 # __md-links__ 💻
@@ -33,7 +33,7 @@ npm install MilagrosRn/md-links
 ### Javascript API ✅
 
 <p>
-  <img align="center" width="80%"  src="https://user-images.githubusercontent.com/60928469/80163190-fb8cfc00-859a-11ea-8028-992538d1cc0f.png">
+  <img align="center" width="80%"  src="https://user-images.githubusercontent.com/60928469/82172510-f8321b00-988f-11ea-8a7b-3da41c57365a.png">
 </p>
 
 ### Interfaz CLI ✅
@@ -44,9 +44,10 @@ npm install MilagrosRn/md-links
 
 # 4. backlog de implementación de la librería
 
-Este proyecto se implento durante 3 semanas y se trabajo la implementacion, planificacion y manejo de errores y mejoras en github projects 
+Este proyecto se implento durante 3 semanas y se trabajo la implementacion, planificacion y manejo de errores y mejoras, en github projects 
 
 ![image](https://user-images.githubusercontent.com/60928469/81372948-39247580-90c1-11ea-829f-8ab73f8eef8c.png)
+![boardToDo](https://user-images.githubusercontent.com/60928469/82172659-6c6cbe80-9890-11ea-87e4-b6ad8c5e97c8.png)
 
 ## 5.JavaScript API 📑
 
@@ -76,7 +77,12 @@ las siguientes propiedades:
 
 #### Ejemplo
 
-![image](https://user-images.githubusercontent.com/60928469/81334069-123b5480-906b-11ea-8993-fd00718e413a.png)
+![imageDir](https://user-images.githubusercontent.com/60928469/82178914-c4142580-98a2-11ea-8f4e-1bb925a73757.png)
+
+![imageValidate](https://user-images.githubusercontent.com/60928469/82179086-1ce3be00-98a3-11ea-98d6-6f871db72b79.png)
+
+![imageFile](https://user-images.githubusercontent.com/60928469/82179153-400e6d80-98a3-11ea-8682-c8160f3f0c23.png)
+
 
 # 6.Modo de uso📌
 ## CLI (Command Line Interface - Interfaz de Línea de Comando)

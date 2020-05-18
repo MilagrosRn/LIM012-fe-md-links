@@ -62,7 +62,7 @@ if (process.argv[5] !== undefined) {
         }
       });
     }).catch((error) => console.log(chalk.cyan('No files with md extension found')));
-  }else{
+  } else {
     console.log(chalk.cyan('you added invalid characters type "--help" for more usage information'));
   }
 } else if (optionHelp) {
@@ -82,17 +82,17 @@ if (process.argv[5] !== undefined) {
     --v --s   || --s --v                  returns more statistics of markdown files
   `);
 } else if (optionInvalidOptions) {
-  mdLinks(path, { validate: false }).then((res) => {
+  mdLinks(path).then((res) => {
     res.forEach((element, index, arr) => {
       console.log(chalk.yellow(`
-      FILE NUMBER ${index + 1}`));
+FILE NUMBER ${index + 1}`));
       console.log(`
     URL: ${element.file}
     TEXT: ${element.text} `);
       if (element.href === '') {
-        console.log(chalk.bold.red(`          HREF: ${element.href} `));
+        console.log(chalk.bold.red('    HREF: invalid link'));
       } else {
-        console.log(`          HREF: ${chalk.green(element.href)} `);
+        console.log(`    HREF: ${chalk.green(element.href)} `);
       }
     });
   }).catch((error) => console.log(chalk.cyan('Invalid path type "--help" for more usage information')));

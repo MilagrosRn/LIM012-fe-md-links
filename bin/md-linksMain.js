@@ -5,17 +5,21 @@ const {
 } = require('../lib/path.js');
 const { urlValidate } = require('../lib/urlValidate');
 
-const mdLinks = (route, options) => new Promise((resolve) => {
+const mdLinks = (route, options) => new Promise((resolve, reject) => {
   let arrPaths = [];
   const absolutePath = checkPathType(route) ? (route) : convertPathRelative(route);
   const checkDirectory = (isDirectory(absolutePath)) ? extractFiles(absolutePath) : ([absolutePath]);
   arrPaths = arrPaths.concat(checkDirectory);
-  if (!options.validate) {
-    resolve(extractLinks(filterPathsMd(arrPaths)));
+  if (options) {
+    if (options.validate) {
+      resolve((urlValidate(extractLinks(filterPathsMd(arrPaths)))));
+    } else {
+      reject(new Error('invalid option'));
+    }
   } else {
-    resolve((urlValidate(extractLinks(filterPathsMd(arrPaths)))));
+    resolve(((extractLinks(filterPathsMd(arrPaths)))));
   }
-}).then((resp) => (resp));
+});
 
 module.exports = {
   mdLinks,
